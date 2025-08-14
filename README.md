@@ -1,2 +1,2 @@
 # Mess-Leave-Calculater
-it helps to calculate the leaves i took from Mess
+it helps to calculate the leaves youtook from Mess
