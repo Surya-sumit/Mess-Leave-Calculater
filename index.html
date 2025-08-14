@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mess Leave Tracker - Premium Edition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-card">
+    <h1>Mess Leave Tracker</h1>
+    <div class="desc">Track your mess leaves, see your cycle end date, and get a premium experience.</div>
+    <div class="form-row">
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" aria-label="Start Date">
+      <button onclick="generateCalendar()">Generate</button>
+    </div>
+    <div class="form-row" id="bulkLeaveBox" style="display:none;">
+      <label for="bulkLeaveStart">Bulk Leave:</label>
+      <input type="date" id="bulkLeaveStart">
+      <span style="font-weight:600;color:#a0a5b2;">to</span>
+      <input type="date" id="bulkLeaveEnd">
+      <button onclick="addBulkLeave()" style="padding:9px 13px;">Add</button>
+    </div>
+    <div id="dateRange" style="margin-bottom:6px;"></div>
+    <div id="calendar" class="calendar"></div>
+    <button onclick="calculate()" id="calcBtn" style="margin-top: 10px;">Calculate</button>
+    <button onclick="printResult()" id="printBtn" style="margin-top:3px; background:linear-gradient(90deg,#d6a700,#3b5fff 80%);">Print</button>
+    <div id="result" class="result" aria-live="polite" style="display:none"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
