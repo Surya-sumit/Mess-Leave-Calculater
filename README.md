@@ -1,4 +1,4 @@
-# Mess Leave Tracker - Premium Edition
+# Mess Leave Tracker
 
 This is a simple web app to help you track your mess leaves and calculate your mess cycle end date.  
 You can select your cycle start date, mark leave days, add multiple leaves in bulk, and see the updated cycle end date instantly.
